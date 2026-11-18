@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julien Fontaine-Desjardins | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ring" id="ring"></div>
+<header>
+  <a class="logo mono" onclick="closeAll()">JFD<b>.dev</b></a>
+  <div class="hr"><button class="pill mono tt" onclick="theme()"></button><button class="pill mono" id="mb" onclick="toggleMenu()">Menu</button></div>
+</header>
+
+<nav id="menu">
+  <a onclick="show('about')"><small>01</small>A propos</a>
+  <a onclick="show('articles')"><small>02</small>Articles</a>
+  <a onclick="show('skills')"><small>03</small>Competences</a>
+  <a onclick="show('exp')"><small>04</small>Experience</a>
+  <a onclick="show('docs')"><small>05</small>CV &amp; Lettre</a>
+  <a onclick="show('contact')"><small>06</small>Contact</a>
+</nav>
+
+<main id="hero">
+  <div id="vanta"></div>
+  <div class="hero-in">
+    <p class="mono tagline">BTS SIO / SLAM / La Réunion</p>
+    <h1><span class="l"><span>Julien</span></span><span class="l"><span class="out">Fontaine-</span></span><span class="l"><span class="out">Desjardins</span></span></h1>
+    <p class="role mono">Développeur &amp; technicien informatique</p>
+    <p class="lead">Étudiant en BTS SIO spécialité SLAM. Passionné de développement, de cybersécurité et de systèmes, avec une vraie expérience terrain en déploiement et support.</p>
+    <div class="cta"><button class="btn" onclick="show('contact')">Me contacter</button><button class="btn ghost" onclick="show('exp')">Voir mes missions</button></div>
+    <div class="stats mono"><div><b>180+</b>PC déployés</div><div><b>2 sem.</b>Allemagne</div><div><b>SLAM</b>Programmation</div></div>
+  </div>
+  <div class="mq mono"><div id="mqi">Python / Java / SQL / HTML-CSS / Linux / Windows / Clonezilla / Réseaux / Cybersécurité / WordPress / </div></div>
+</main>
+
+<section class="page" id="about"><div class="inner">
+  <p class="mono eb rv">01 / A propos</p><h2 class="rv">Qui suis-<em>je</em> ?</h2>
+  <div class="grid two">
+    <div class="rv txt"><p>Étudiant en BTS SIO au lycée Pierre Poivre (La Réunion), j'ai choisi la spécialité <em>SLAM</em> car le développement est ma passion : concevoir des applications fiables et maîtriser les bonnes pratiques du code.</p><p>Mon stage à la <em>Fondation Père Favron</em> m'apporte l'expérience terrain : parc informatique, réseaux, support, cybersécurité. Dev et infra, c'est ma double compétence.</p><p>Autonome, rigoureux et curieux, je m'adapte aussi bien à un contexte technique qu'international, comme en Allemagne.</p></div>
+    <div class="rv info mono"><div><small>LIEU</small>La Réunion</div><div><small>EMAIL</small>julien.fontainee@hotmail.com</div><div><small>MOBILITÉ</small>Permis B, véhiculé</div><div><small>LANGUES</small>Français natif, anglais B1</div><div><small>INTÉRÊTS</small>Voyage, musique, jeux vidéo, auto</div></div>
+  </div>
+</div></section>
+
+<section class="page" id="articles"><div class="inner">
+  <p class="mono eb rv">02 / Articles</p><h2 class="rv">Retours d'<em>expérience</em></h2>
+  <details class="rv card art"><summary><span class="mono">International / 2 semaines</span>Ce que l'Allemagne m'a vraiment appris</summary>
+    <p>Deux semaines en Allemagne avec le BTS SIO, tout en anglais : une des meilleures expériences de ma formation.</p>
+    <p><b>Cybersécurité :</b> phishing, malwares, ransomwares, ingénierie sociale. J'ai compris que l'humain reste le maillon faible, et que mots de passe robustes, mises à jour et moindre privilège sont la base.</p>
+    <p><b>WordPress :</b> création d'un site complet (architecture, extensions, contenu, responsive, sécurité des plugins).</p>
+    <p><b>Anglais pro :</b> consignes techniques, questions, collaboration au quotidien. Niveau B1, mais avec du vécu.</p></details>
+  <details class="rv card art"><summary><span class="mono">Stage / Fondation Père Favron</span>180 PC, des EHPAD et de la cyber</summary>
+    <p>Un parc de 180 postes, des résidences réparties sur l'île, des utilisateurs qui comptent sur toi.</p>
+    <p><b>Déploiement :</b> clonage avec Clonezilla, installation de TeamViewer, Cortex et Pack Office, mots de passe forts (14 caractères min., majuscule et caractère spécial).</p>
+    <p><b>Réseau :</b> imprimantes configurées via IPv4, contrôle des bornes Wi-Fi des EHPAD d'après les schémas des prestataires.</p>
+    <p><b>Support &amp; sécurité :</b> pannes clavier, freezes, et destruction sécurisée des disques durs des PC mis au rebut (RGPD).</p></details>
+</div></section>
+
+<section class="page" id="skills"><div class="inner">
+  <p class="mono eb rv">03 / Compétences</p><h2 class="rv">Stack &amp; <em>savoir-faire</em></h2>
+  <div class="grid">
+    <div class="rv card"><small class="mono">Développement</small><h3>Langages</h3><i class="tag">Python</i><i class="tag">Java</i><i class="tag">SQL</i><i class="tag">HTML/CSS</i></div>
+    <div class="rv card"><small class="mono">Outils</small><h3>IDE &amp; environnements</h3><i class="tag">IntelliJ</i><i class="tag">Scene Builder</i><i class="tag">VirtualBox</i><i class="tag">WordPress</i></div>
+    <div class="rv card"><small class="mono">Systèmes</small><h3>OS &amp; admin</h3><i class="tag">Windows</i><i class="tag">Linux</i><i class="tag">Clonezilla</i></div>
+    <div class="rv card"><small class="mono">Réseaux</small><h3>Infrastructure</h3><i class="tag">IPv4</i><i class="tag">Wi-Fi</i><i class="tag">Imprimantes réseau</i></div>
+    <div class="rv card"><small class="mono">Cybersécurité</small><h3>Bonnes pratiques</h3><i class="tag">Phishing</i><i class="tag">MDP forts</i><i class="tag">Destruction HDD</i><i class="tag">RGPD</i></div>
+    <div class="rv card"><small class="mono">Support</small><h3>Terrain</h3><i class="tag">TeamViewer</i><i class="tag">Pack Office</i><i class="tag">Cortex</i><i class="tag">Support N1</i></div>
+  </div>
+</div></section>
+
+<section class="page" id="exp"><div class="inner">
+  <p class="mono eb rv">04 / Expérience</p><h2 class="rv">Missions <em>réalisées</em></h2>
+  <div class="rv card job"><div><h3>Technicien informatique (stage)</h3><small class="mono">Fondation Père Favron / 2025, en cours</small></div>
+    <ul><li>Configuration et déploiement de +180 PC via Clonezilla (TeamViewer, Cortex, Pack Office, mots de passe forts)</li><li>Remise des postes aux utilisateurs dans les services</li><li>Configuration d'imprimantes réseau en IPv4</li><li>Support N1 : claviers, freezes, pannes logicielles</li><li>Contrôle de l'installation des bornes Wi-Fi dans les EHPAD</li><li>Destruction sécurisée des disques durs (cybersécurité)</li></ul></div>
+  <div class="rv card job"><div><h3>Stage international</h3><small class="mono">Allemagne / 2 semaines</small></div>
+    <ul><li>Cybersécurité : types d'attaques, phishing, sensibilisation</li><li>Création d'un site WordPress</li><li>Anglais professionnel en environnement international</li></ul></div>
+  <div class="rv card job"><div><h3>Formation</h3><small class="mono">2025, en cours</small></div>
+    <ul><li>BTS SIO option SLAM, lycée Pierre Poivre</li><li>Baccalauréat général, spécialité NSI</li></ul></div>
+</div></section>
+
+<section class="page" id="docs"><div class="inner">
+  <p class="mono eb rv">05 / Documents</p><h2 class="rv">CV &amp; <em>lettre</em></h2>
+  <div class="grid two">
+    <div class="rv card"><h3>Curriculum Vitæ</h3><iframe src="assets/cv.pdf#toolbar=0" title="CV"></iframe><a class="btn" href="assets/cv.pdf" download="CV_Julien_Fontaine_Desjardins.pdf">Télécharger le CV (PDF)</a></div>
+    <div class="rv card"><h3>Lettre de motivation</h3><iframe src="assets/lettre.pdf#toolbar=0" title="Lettre"></iframe><a class="btn" href="assets/lettre.pdf" download="Lettre_Motivation_Julien_Fontaine_Desjardins.pdf">Télécharger la lettre (PDF)</a></div>
+  </div>
+</div></section>
+
+<section class="page" id="contact"><div class="inner">
+  <p class="mono eb rv">06 / Contact</p><h2 class="rv">Travaillons <em>ensemble</em></h2>
+  <div class="rv card form">
+    <label>Nom<input id="n" placeholder="Jean Dupont"></label>
+    <label>Email<input id="e" type="email" placeholder="jean@exemple.com"></label>
+    <label>Téléphone<span class="ph"><select id="i"><option value="+262" selected>+262</option><option value="+33">+33</option></select><input id="t" type="tel" placeholder="692 00 00 00"></span></label>
+    <label>Objet<input id="s" placeholder="Proposition de stage"></label>
+    <label>Message<textarea id="m" rows="4"></textarea></label>
+    <button class="btn" id="send" onclick="sendMail()">Envoyer</button><p class="mono" id="st"></p>
+  </div>
+</div></section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.globe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
